@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="436.0" prefWidth="622.0" style="-fx-background-color: #222222; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="100.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" text="Mode" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="solid_radio_button" layoutX="8.0" layoutY="44.0" mnemonicParsing="false" text="Solid" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="48.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="cycle_radio_button" layoutX="15.0" layoutY="72.0" mnemonicParsing="false" text="Cycle" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="84.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="breather_radio_button" layoutX="8.0" layoutY="100.0" mnemonicParsing="false" text="Breathe" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="156.0" layoutY="100.0" AnchorPane.leftAnchor="156.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <CheckBox fx:id="intro_checkbox" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Intro" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+      <ColorPicker fx:id="color_picker" layoutX="156.0" layoutY="190.0" AnchorPane.leftAnchor="156.0" />
+      <Label layoutX="156.0" layoutY="160.0" text="Color picker" textFill="WHITE" AnchorPane.leftAnchor="156.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="322.0" text="Rate" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Slider fx:id="brightness_slider" blockIncrement="1.0" cache="true" layoutX="15.0" layoutY="286.0" majorTickUnit="10.0" minorTickCount="4" prefHeight="15.0" prefWidth="288.0" showTickMarks="true" value="1.0" AnchorPane.leftAnchor="15.0" />
+      <Slider fx:id="rate_slider" cache="true" layoutX="15.0" layoutY="350.0" majorTickUnit="10000.0" max="60000.0" min="100.0" minorTickCount="4" prefHeight="15.0" prefWidth="288.0" showTickMarks="true" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="15.0" layoutY="256.0" text="Brightness" textFill="WHITE" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rate_text" layoutX="317.0" layoutY="346.0" prefHeight="25.0" prefWidth="91.0" AnchorPane.leftAnchor="317.0" />
+      <TextField fx:id="brightness_text" editable="false" layoutX="317.0" layoutY="282.0" prefHeight="25.0" prefWidth="91.0" AnchorPane.leftAnchor="317.0" />
+      <Button fx:id="apply_button" contentDisplay="CENTER" layoutX="549.0" layoutY="389.0" mnemonicParsing="false" style="-fx-background-color: #28A2FF;" text="Apply" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="reset_button" contentDisplay="CENTER" layoutX="471.0" layoutY="389.0" mnemonicParsing="false" style="-fx-background-color: #28A2FF;" text="Reset" textFill="WHITE" AnchorPane.topAnchor="389.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="4.0" layoutY="1.0" prefHeight="101.0" prefWidth="615.0" style="-fx-background-color: #222222;">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="119.0" layoutX="110.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/50028.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="225.0" layoutX="211.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/logitech-logo-icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
